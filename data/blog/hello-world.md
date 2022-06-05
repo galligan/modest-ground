@@ -9,4 +9,4 @@ summary: 'Just testing this out.'
 
 ## Hi there
 
-This is nifty.
+Just testing out my new site.

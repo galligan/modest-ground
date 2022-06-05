@@ -64,6 +64,10 @@ h3.title {
   @apply text-right;
 }
 
+.prose img {
+  @apply my-1;
+}
+
 .prose a {
   @apply font-normal text-primary-600 no-underline underline-offset-2 hover:underline;
 }
