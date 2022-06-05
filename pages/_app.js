@@ -12,6 +12,10 @@ import Analytics from '@/components/analytics'
 import LayoutWrapper from '@/components/LayoutWrapper'
 import { ClientReload } from '@/components/ClientReload'
 
+import '@fortawesome/fontawesome-svg-core/styles.css' // import Font Awesome CSS
+import { config } from '@fortawesome/fontawesome-svg-core'
+config.autoAddCss = false // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
+
 const isDevelopment = process.env.NODE_ENV === 'development'
 const isSocket = process.env.SOCKET
 
