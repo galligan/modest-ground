@@ -13,7 +13,11 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
 
   return (
     <SectionContainer>
-      <BlogSEO url={`${siteMetadata.siteUrl}/blog/${frontMatter.slug}`} {...frontMatter} />
+      <BlogSEO
+        url={`${siteMetadata.siteUrl}/blog/${frontMatter.slug}`}
+        authorDetails={authorDetails}
+        {...frontMatter}
+      />
       <ScrollTopAndComment />
       <article className="customLayout">
         <div>
@@ -22,11 +26,15 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
               <div>
                 <PageTitle>{title}</PageTitle>
               </div>
-              <dl>
-                <div>
+              <dl className="whitespace-nowrap text-sm font-medium leading-5">
+                <div className="postMeta">
                   <dt className="sr-only">Published on</dt>
                   <dd className="inline text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                     <time dateTime={date}>{formatDate(date)}</time>
+                  </dd>
+                  <dt className="sr-only">Written by</dt>
+                  <dd className="inline text-base font-medium leading-6 text-gray-500 before:content-['by_'] dark:text-gray-400">
+                    <Link href="/about">Matt Galligan</Link>
                   </dd>
                   {/* <dt className="sr-only">Tags</dt>
                   <dd className="before:content-['_•_'] inline text-base font-medium leading-6 text-gray-500 dark:text-gray-400">

@@ -3,17 +3,17 @@ title: NFTs are not just the art—they're also the certificate of authenticity
 slug: an-nft-is-not-the-art
 date: '2021-03-12'
 tags: ['NFTs', 'Crypto']
-draft: true
+draft: false
 excerpt: Would you buy a car without a title? A house without a deed? NFTs are things with authenticity built-in, making them more than just a digital file.
 ---
 
-Writing a series on NFTs wasn't really something I set out to do, but here we are—with my own and the global interest hitting something of a fever pitch. If you haven't seen those yet, you can read [my primer on NFTs here](__GHOST_URL__/wtf-is-an-nft-and-some-use-cases/), [my experience minting one](__GHOST_URL__/how-i-accidentally-created-and-sold-an-nft/), and a [thought exercise on digital membership cards](__GHOST_URL__/membership-nfts/).
+Writing a series on NFTs wasn't really something I set out to do, but here we are—with my own and the global interest hitting something of a fever pitch. If you haven't seen those yet, you can read [my primer on NFTs here](/wtf-is-an-nft-and-some-use-cases/), [my experience minting one](/how-i-accidentally-created-and-sold-an-nft/), and a [thought exercise on digital membership cards](/membership-nfts/).
 
 With Beeple [selling his Everydays piece at a Christie's auction for $69M](https://onlineonly.christies.com/s/beeple-first-5000-days/beeple-b-1981-1/112924) the attention on the space is even hotter than it was a _week_ ago. Every day that passes feels like an eternity here. With all eyes on NFTs a lot of disingenuous headlines are popping up, with many folks scratching their heads wondering what—if anything beyond an image—is everyone buying into here? Let's try to demystify that one a little bit.
 
 ## NFTs are digital objects with certificates of authenticity built-in
 
-![](__GHOST_URL__/content/images/2021/03/iu.png)
+![](https://mattgalligan.ghost.io/content/images/2021/03/iu.png)
 [Banksy](https://banksy.co.uk) is arguably one of the most famous artists in the world, certainly the most famous street artist in existence. His original works, typically in the form of pasted graffiti, are often copied—sometimes in the form of unauthorized prints. So when there's a Banksy work that's for sale, how does a potential buyer know that the work is truly an original? I certainly wouldn't want to pay for something that's a really good look-alike if what I was being sold was an "original".
 
 This is where [Banksy's Pest Control](https://pestcontroloffice.com) comes in. They're a group that's uniquely authorized to authenticate Banksy's works and have a brilliant method for providing proof of that authenticity. For a fee, the team at Pest Control can authenticate a work and then provide a certificate of authenticity. But how do they prevent fake certificates?
@@ -23,7 +23,7 @@ This is where [Banksy's Pest Control](https://pestcontroloffice.com) comes in. T
 Private-key cryptography has been around for a long time. The concept is relatively simple—there's a pair of keys that are used to secure something. If you know my public key, you could encrypt a message with that key—but since only I have the private key that's paired with it, only I can decrypt that message. This is precisely how Pest Control works. They rip up one of Banksy's [Di Faced Tenners](https://hexagongallery.com/catalog/artist/banksy/di-faced-tenner/), and attach one half (the public key) to the paper, while retaining the other half (the private key) in their own secure facility.
 
 If the question of authenticity ever arose around one of Banksy's work, Pest Control could quickly and easily identify the work based on the unique tear pattern that exists on the "public" half, only matched by their corresponding private half.
-![](__GHOST_URL__/content/images/2021/03/image.png)
+![](https://mattgalligan.ghost.io/content/images/2021/03/image.png)
 The trouble with all of this is that a separate authenticating authority, with corresponding certificates, and a cumbersome method of authentication is required to accompany the works. This makes verification slow, with many potential points of failure along the way (destruction of the certificate, loss of the private key, etc.). This is where NFTs are kind of magic—they blend the work itself with the certificate of authenticity.
 
 NFTs themselves are just code—fancy instructions that give rules to computers to help them understand what something is, and how it should be governed. All within a single smart contract (the code) one can establish what the work is (an image, for example), the rules by which it can be traded, any royalty payments that might come along with it, etc. Its existence on an immutable ledger means that one can also inspect its transaction history (transfers, sales, etc.) as well as provenance (how, when, and by whom it was created).

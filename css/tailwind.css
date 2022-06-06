@@ -10,6 +10,10 @@
   @apply list-none;
 }
 
+.postMeta dd {
+  @apply mr-1;
+}
+
 .footnotes {
   @apply mt-12 border-t border-gray-200 pt-8 dark:border-gray-700;
 }
