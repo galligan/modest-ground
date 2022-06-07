@@ -69,7 +69,7 @@ h3.title {
 }
 
 .prose img {
-  @apply my-1;
+  @apply my-4 mx-auto sm:my-5;
 }
 
 .prose a {
@@ -163,12 +163,33 @@ p > code {
   @apply p-0;
 }
 
-.gallery {
-  @apply -mx-2 flex flex-wrap overflow-hidden xl:-mx-12;
+.feature {
+  @apply mx-0 my-4
+    grid grid-cols-1
+    place-content-stretch gap-4 overflow-hidden
+    lg:-mx-20
+    lg:my-8;
+}
+
+.feature img {
+  @apply my-0
+    w-full;
 }
 
 .gallery-2-wide {
-  @apply my-1 w-full overflow-hidden px-2 xl:my-1 xl:w-1/2 xl:px-2;
+  @apply sm:grid-cols-2;
+}
+
+.gallery-3-wide {
+  @apply sm:grid-cols-3 sm:gap-2;
+}
+
+.gallery img {
+  @apply my-0;
+}
+
+.codewrap .code-line {
+  @apply whitespace-pre-wrap px-6 -indent-6;
 }
 
 /* .customLayout .static pre,
