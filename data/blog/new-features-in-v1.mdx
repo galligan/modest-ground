@@ -164,11 +164,16 @@ fastify.get('/login/facebook/callback', async function (request, reply) {
 
 Use the `layout` frontmatter field to specify the template you want to map the markdown post to. Here's how the frontmatter of this post looks like:
 
-<div className="codewrap">
-  ``` --- title: 'New features in v1' date: '2021-05-26 ' tags: ['next-js', 'tailwind', 'guide']
-  draft: false summary: 'Introducing the new layout features - you can map mdx blog content to
-  layout components by configuring the frontmatter field' layout: PostSimple --- ```
-</div>
+```
+---
+title: 'New features in v1'
+date: '2021-05-26   '
+tags: ['next-js', 'tailwind', 'guide']
+draft: false
+summary: 'Introducing the new layout features - you can map mdx blog content to layout components by configuring the frontmatter field'
+layout: PostSimple
+---
+```
 
 You can configure the default layout in the respective page section by modifying the `DEFAULT_LAYOUT` variable.
 The `DEFAULT_LAYOUT` for blog posts page is set to `PostLayout`.
