@@ -192,6 +192,46 @@ p > code {
   @apply whitespace-pre-wrap px-6 -indent-6;
 }
 
+.fancy-card {
+  @apply relative my-4
+    grid
+    w-full
+    auto-cols-auto
+    grid-flow-col space-x-4 rounded-md border
+    p-4
+    transition-all ease-in-out;
+}
+
+.fancy-card.fancy-interactive {
+  @apply hover:scale-[1.01]
+    hover:border-2 hover:border-primary-500 hover:shadow-lg
+    hover:dark:border-gray-400
+    hover:dark:bg-gray-800;
+}
+
+.fancy-card > div {
+  @apply row-auto
+    space-y-1;
+}
+
+.fancy-card h2.fancy-title {
+  @apply my-0
+    text-lg
+    font-semibold;
+}
+
+.fancy-card a p {
+  @apply my-0;
+}
+
+.fancy-card ul:first-child {
+  @apply m-0;
+}
+
+.fancy-card ul:last-child > li:last-child {
+  @apply mb-1;
+}
+
 /* .customLayout .static pre,
   .customLayout .remark-code-title {
   @apply negMargin box-content px-4 py-3;
