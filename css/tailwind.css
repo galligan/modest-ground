@@ -193,19 +193,21 @@ p > code {
 }
 
 .fancy-card {
-  @apply relative my-4
-    grid
-    w-full
+  @apply relative
+    my-4 grid w-full 
     auto-cols-auto
-    grid-flow-col space-x-4 rounded-md border
-    p-4
+    grid-flow-col
+    space-x-4
+    rounded-md
+    border p-4
     transition-all ease-in-out;
 }
 
 .fancy-card.fancy-interactive {
-  @apply hover:my-3
+  @apply hover:my-3 
     hover:scale-[1.01]
-    hover:border-primary-500 hover:shadow-lg
+    hover:border-primary-500
+    hover:shadow-lg
     hover:dark:border-gray-400
     hover:dark:bg-gray-800;
 }
